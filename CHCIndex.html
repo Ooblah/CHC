@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+	<header class="clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="navbar-brand col-sm-4 col-md-2 hidden-xs">
+					<a href="https://www.airmiles.ca/arrow/Home">
+						<img class="img-responsive" alt="AIR MILES Card" src="img/logo-card-en.png">
+					</a>
+				</div>
+				<div class="header-content logged-out col-sm-8 col-md-10">
+					<div class="header-toolbar col-md-6 hidden-xs">
+						<ul class="tool-bar nav navbar-nav dotted">
+							<li id="header_language_menu_item" class="">
+								<a class="" target="" href="fr_FR">Français</a>
+							</li>
+							<li id="header-enroll-now" class="">
+								<a class="" target="" href="/arrow/EnrollmentAllStep0">Enroll Now</a>
+							</li>
+							<li id="header-cart-icon" class="icon-cart">
+								<a class="glyphicon glyphicon-shopping-cart" target="" href="/arrow/ShoppingCart"></a>
+							</li>
+							<li id="header-link-youraccount" class="dropdown dropdown-hover">
+								<a class="dropdown dropdown-hover" target="" href="/arrow/MyAccount">Your Account</a>
+								<span class="caret"></span>
+
+							</li>
+							<li id="header-dropdown-signin" class="dropdown">
+								<a id="header-link-signin" data-toggle="dropdown" role="button" href="#">Sign In</a>
+
+							</li>
+						</ul>
+					</div>
+					<form id="header-form" class="header-form col-xs-12 col-md-6 pull-left" method="post" target="_self" action="/arrow/login/SignInL2;jsessionid=BC54584B7EC3C6A2D2CCF5F54B736F56?preserveInterception=true&stateId=5&_DARGS=/arrow/base/layout/header/headerLoginFormV3.jsp">
+
+						<label class="label-collector-number" for="header-collector-number-input">
+							How many
+							<span class="non-mobile">AIR MILES reward </span>
+							miles do you have?
+						</label>
+						<div class="row">
+							<div class="pull-left">
+								<div id="header-collector-number" class="clearable-input">
+									<input id="header-collector-number-input" class="form-control" type="text" value="" name="/atg/userprofiling/ProfileFormHandler.collectorNumber" placeholder="Enter your Collector number" maxlength="11">
+
+									<div class="clear-button"></div>
+								</div>
+							</div>
+							<input class="pull-left btn btn-primary" type="submit" value="Go" name="/atg/userprofiling/ProfileFormHandler.login">
+
+						</div>
+						<div class="header-input-additional">
+							<label class="label-rememberme" for="header-rememberme">
+								<input id="header-rememberme" type="checkbox" value="true" name="/atg/userprofiling/ProfileFormHandler.rememberCollector">
+
+								Remember Me
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar navbar-default " role="navigation">
+		<h1 class="visible-xs pull-left"></h1>
+		<div class="navbar-header">
+			<div class="container">
+				<div class="row">
+					<div id="navbar-main" class="col-md-offset-2 col-sm-12 col-md-10 collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li id="navmenu-home" class="menu-home">
+								<a href="/arrow/Home"> Home </a>
+							</li>
+							<li id="navmenu-earnmiles" class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Earn Miles </a>
+
+							</li>
+							<li id="navmenu-redeem" class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Redeem Miles </a>
+
+							</li>
+							<li id="navmenu-chc" class="dropdown active">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> CHC </a>
+
+							</li>
+							<li id="navmenu-needhelp" class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Need Help? </a>
+
+							</li>
+							<li id="navmenu-more" class="dropdown dropdown-adjust hidden-xs ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> More </a>
+
+							</li>
+
+
+							<li id="navmenu-search" class="hidden-xs">
+								<a id="header-search-button" class="glyphicon glyphicon-search" href="javascript:;">
+									<span class="off"></span>
+									<span class="on"></span>
+								</a>
+								<form action="/arrow/Search" autocomplete="off">
+									<div id="header-search-box" class="clearable-input input-autocomplete">
+										<input id="searchText" class="form-control" type="text" value="Search" placeholder="Search" name="Ntt">
+										<ul id="autocomplete-list" class="autocomplete-list"></ul>
+										<div class="clear-button" href="#"></div>
+									</div>
+									<input type="hidden" value="1" name="Nty">
+								</form>
+							</li>
+						</ul>
+					</div>
+					<a id="link-amshops" class="link-amshops pull-right hidden-xs" target="_blank" href="/arrow/Go?id=1">
+						<span>
+							Shop online and earn at
+							<span id="logo-amshops">
+								<span>airmiles</span>
+								shops.ca
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<div id="header-overlay" class=""></div>
+
+		<div class="container">
+
+			<div id="rewardsNavContainer">
+				<h1 class="section-title">Canadians Helping Canadians</h1>
+				<table id="rewardsNavContent" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td id="cat670022" class="">
+								<a href="/arrow/RewardsCategoryHome?selectedCategoryId=cat670022" target="_top">Omg the first CHC category</a>
+							</td>
+							<td>
+							</td>
+
+						</tr>
+					</tbody>
+				</table>
+				<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
+				<div id="fb-root"></div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" href="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" href="js/bootstrap.js"></script>
+		<script type="text/javascript" href="js/fbshare.js"></script>
+
+
+	</body>
