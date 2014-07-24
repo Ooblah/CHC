@@ -1,0 +1,911 @@
+/*
+	INDEX
+	- Miscellaneous
+	- Rewards Nav Container
+	- Rewards Nav Content
+	
+*/
+
+
+/*-----------------------------------------
+	MISCELLANEOUS
+-------------------------------------------*/
+img {
+	border: none;
+	display: inline;
+	position: relative;
+	behavior: url(arrow/webresource/css/iepngfix.htc); /* enables transparent png's in IE */
+}
+
+
+/*-----------------------------------------
+	REWARDS NAV CONTAINER
+-------------------------------------------*/
+#rewardsNavContainer {
+	position: relative;
+	width: 980px;
+	background: #d6d6d6;
+	margin: 0px auto;
+	color: #004165;
+}
+#rewardsNavContainer h1.section-title{
+	font-size: 24px;
+	font-weight: normal;
+	background-color: #FFFFFF;
+	padding: 0px 0px 20px 0px;
+}
+#master_container #main-container #rewardsNavContainer h1.section-title{
+	padding: 20px 0 20px !important;	
+}
+#AZNavArrow {
+	margin-top: 5px;
+}
+	
+
+/*-----------------------------------------
+	REWARDS NAV CONTENT 
+-------------------------------------------*/
+#rewardsNavContent {
+	width: 100%;
+	height: 44px;
+	border: 1px solid #CCD9E0;
+	background: none repeat scroll 0 0 #F2F5F7;
+}
+	#rewardsNavContent td {
+		height: 100%;
+		padding: 0 15px;
+		vertical-align: middle;
+		text-align: center;
+		border: 1px solid #CCD9E0;
+	}
+		#rewardsNavContent td a {
+			font-size: 11px;
+			color: #004165;
+			text-decoration: none;
+		}
+		#rewardsNavContent td:hover {
+			border: 1px solid #CCD9E0;
+			cursor: pointer;
+		}
+			#rewardsNavContent td:hover a {
+				color: #009FDA;
+			}
+		#rewardsNavContent td.active {
+			border: 1px solid #CCD9E0;
+			background-color: #FFFFFF;
+		}
+			#rewardsNavContent td.active a {
+				color: #009FDA;
+			}
+		#rewardsNavContent #AZNavCell {
+			border-right: none;
+			background: none;
+		}	
+		#rewardsNavContent #AZNavCell.active {
+			background-color: #f8f8f8;
+		}	
+			
+#rewardsAZNavContainer {
+	background: #f8f8f8;	
+	border-bottom: 1px solid #dcdcdc;
+	display: none;
+	overflow: hidden;
+	width: 980px;
+	margin: auto;
+}
+	#rewardsAZNavContainer .inner_wrap {
+		padding: 15px 30px 20px 30px;
+	}
+	#rewardsAZNavContainer a {
+		color: #5f5e5e;
+	}
+	#rewardsAZNavContainer a:hover {
+		color: #000;
+	}
+	#rewardsAZNavContainer .header {
+		font-weight: bold;
+		border-bottom: 1px solid #e8e8e8;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+	}
+		#rewardsAZNavContainer .header .title {
+			float: left;
+		}
+		#rewardsAZNavContainer .header a.close_button {
+			float: right;
+		}
+			#rewardsAZNavContainer .header a.close_button img {
+				position: static;
+			}
+		
+	#rewardsAZNavContainer ul {
+		float: left;
+		list-style: none;
+		width: 160px;
+		margin-right: 20px;
+		
+	}
+	#rewardsAZNavContainer ul.alt_nav {
+		font-weight: bold;
+	}
+		#rewardsAZNavContainer ul li {
+			list-style-type: none;
+			margin-left: 0;
+			margin-bottom: 7px;
+			line-height: 14px;
+		}
+			#rewardsAZNavContainer ul li a {
+				font-size: 11px;
+			}
+
+
+/*-
+	INDEX
+	- Rewards Container 
+	- Rewards Breadcrumb
+	- Frame Footer
+	- Miscellaneous	
+*/
+.hover_button {
+	outline: none;
+}
+/*-----------------------------------------
+	REWARDS CONTAINER 
+-------------------------------------------*/
+#rewards-container div, #rewards-container p, 
+#rewards-container img, #rewards-container dl, 
+#rewards-container dt, #rewards-container dd, 
+#rewards-container ol, #rewards-container ul, 
+#rewards-container form, #rewards-container label, 
+#rewards-container table, #rewards-container tbody, 
+#rewards-container tfoot, #rewards-container thead, 
+#rewards-container tr, #rewards-container th, 
+#rewards-container td {
+	font-size: 12px;
+	line-height: 1.26;
+	vertical-align: top;
+}
+
+#rewards-container {
+	position: relative;
+	width: 980px;
+	/*top: -10px;*/
+	z-index: 2;
+	margin: 0 auto;
+	display: table;
+
+}
+	#rewards-container .topCardBotCorner {
+		position: absolute;
+		top: 0;
+		left: 32px;
+		z-index: 2;
+	}
+	
+	/*#rewards-container .botCardTopCorner {
+		position: absolute;
+		bottom: 0 !important;
+		bottom: -1px;
+		right: 37px;
+		z-index: 2;
+	}*/
+	
+/* PAGE HEADINGS --------------------------- */	
+#travel_specials {
+	position: relative;
+	padding-bottom: 30px;
+}
+	
+/* for IE6 \*/
+*.#travel_specials {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+#travel_specials h2
+ {
+	background:transparent url(/arrow/webresource/images/travel/backgrounds/header_shadow.jpg) no-repeat scroll left bottom;
+	margin-bottom:0;
+	padding-top:30px;
+	padding-bottom:8px;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 0px;
+}	
+	#travel_specials h2 a:link, #travel_specials h2 a:hover, #travel_specials h2 a:active, #travel_specials h2 a:visited {
+		color: #2b2b2b;
+	}
+
+#travel_specials .more_link {
+	position:absolute;
+	right:20px;
+	top:35px;
+	background: url(/arrow/webresource/images/bullets/blt_circle_arrow_right.gif) right no-repeat;
+	padding-right: 20px;
+}
+
+/* TRAVEL SPECIALS ------------------------- */
+#travel_specials .promos {
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	padding: 15px 0 0px 0;
+
+}
+	#travel_specials .promo {
+		float: left;
+		width: 191px;
+		height: 100%;
+		margin-right: 15px;
+		background: #EDEDED none repeat scroll 0 0;
+	}
+		#travel_specials .promo .thumbnail {
+			margin: 20px 20px 10px;
+		}
+
+		#travel_specials .promos .promo :hover .thunmnail_resize_150_150 {
+			border-color: #bebdbd;
+		}
+
+		#travel_specials .promos .promo .thunmnail_resize_150_150 {
+			border: 1px solid #E8E7E7;
+			width: 152px;
+			height: 152px;
+			text-align: center;
+			line-height: 150px;
+			margin: 20px 20px 10px;
+		}
+
+		#travel_specials .promos .promo .thunmnail_resize_150_150 img.resize {
+			max-width: 150px;
+			max-height: 150px;
+			margin: auto;
+			vertical-align: middle;
+			line-height: 150px;
+		}
+		
+		#travel_specials .promo .info {
+			padding: 3px 20px 15px;
+		}
+			#travel_specials .promo .info a.title {
+				font-size: 14px;
+				font-weight: bold;
+				color: #323232;
+				display: block;
+				margin-bottom:5px;
+			}
+			#travel_specials .promo .info p {
+				font-size: 11px;
+				font-weight: bold;
+				color: #848383;
+				margin-bottom: 5px;
+			}
+			#travel_specials .promo .info .original_price {
+				color: #ff4800;
+				text-decoration: line-through;
+				font-size: 11px;
+			}
+			#travel_specials .promo .info .sale_price {
+				font-size: 14px;
+				font-weight: bold;
+				color: #313131;
+			}
+			#travel_specials .promo .info .expires {
+				font-size: 10px;
+				color: #a9a8a8;
+				display: block;
+				margin: 5px 0;
+			}
+			#travel_specials .promo .info a.more_link {
+				position: static;
+			}
+	#travel_specials .st_lucia {
+		margin-top: -10px;
+		margin-bottom: 15px;
+	}
+	#travel_specials .credit_cards {
+		margin: 0 0 5px 28px;
+	}
+	#travel_specials .westjet {
+		margin: 12px 0 0 14px;
+	}
+
+	
+/*-----------------------------------------
+	UPPER CONTENT HEADER
+-------------------------------------------*/
+#upper_content_header {
+	margin-bottom: 10px;
+	margin-top: -15px;
+}
+	#upper_content_header .title {
+		display: inline;
+		float: left;
+		padding: 0;
+		line-height: 55px;
+		margin-left: 25px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#upper_content_header .title img {
+		float: left;
+		margin-right: 5px;
+	}
+	#upper_content_header .back_link {
+		float: right;
+		margin-top: 25px;
+		margin-right: 25px;
+		font-weight: bold;
+	}
+
+
+
+/*-----------------------------------------
+	REWARDS BREADCRUMB
+-------------------------------------------*/	
+#rewards-breadcrumb {
+	font-size: 10px;
+	color: #858585;
+	padding: 10px 11px;
+}
+	#rewards-breadcrumb a {
+		font-size: 10px;
+		color: #858585;
+		text-decoration: none;
+		padding: 0 4px;
+	}
+	#rewards-breadcrumb a:hover {
+		color: #4b4b4b;
+	}
+	
+
+/*-----------------------------------------
+	REWARDS CONTENT 
+-------------------------------------------*/
+#rewards-content {
+	width: 980px;
+	margin: auto;
+	
+}
+#wishlist{
+	background: url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_wave.jpg) no-repeat 0 25px;
+}
+
+
+
+	#rewards-content.after_breadcrumb {
+		border-top: 1px solid #eeeeee;
+		background: url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_rewards_breadcrumb_shadow.gif) no-repeat center top;
+	}
+
+
+/*-----------------------------------------
+	FRAME FOOTER 
+-------------------------------------------*/
+#frame-footer {
+	padding: 0;
+	position: relative;
+	top: -16px;
+	width: 980px;
+}
+#frame-footer #lowerfooter {
+	margin: 0;
+	width: 980px;
+}
+#innerLeft {
+	float:left;
+	padding:20px 0px 20px 20px;
+}
+#footerMenu{
+	padding:20px 3px 20px 0px ;
+}
+#subMenuFooter{
+	float:left;
+	position:relative;
+	z-index:100;
+	width:705px;
+}
+#footerMenu .subDivide{
+	float:left;
+	position:relative;
+}
+#footerMenu .headerOuterItemUl{
+	list-style:none;
+	list-style-position:none;
+	margin:0px;
+	padding:0px;
+	background:#002a48;
+}
+#footerMenu .headerOuterItemLi{
+	margin:0px;
+	padding:0px;
+	float:left;
+	cursor:pointer;
+	list-style:none;
+}
+#footerMenu .headerOuterItemDiv{
+	position:relative;
+}
+#footerMenu .headerInnerItemUl{
+	position:absolute;
+	text-align:left;
+	list-style:none;
+	list-style-position:none;
+	margin:0px;
+	padding:0px;
+	background:#002a48;
+	visibility:hidden;
+	display:none;
+	width:135px;
+	left:10px;
+	top:20px;
+}
+#footerMenu .submenuRepeat1{
+	clear:both;
+	padding:3px;
+	padding-bottom:0px;
+}
+#footerMenu .headerInnerItemLi{
+	padding:3px;
+	padding-left:10px;
+	list-style:none;
+	list-style-position:none;
+}
+#footerMenu .headerOuterItemLi:hover ul{
+	display:				block;
+	visibility:				visible;	
+}
+#footerMenu .submenuRepeat2{
+clear:both;
+}
+#footerMenu a.linkWhite:link{
+	text-decoration:		underline;
+	font-size:10px;
+}
+#footerMenu a.linkWhite:link,
+#footerMenu a.linkWhite:visited,
+#footerMenu a.linkWhite:active{
+	color:					#FFFFFF;
+}
+#footerMenu a.linkWhite:hover,
+#footerMenu a.linkWhiteNone:hover{
+	color:					#F3E798;
+	text-decoration:		underline;
+}
+#footerMenu .dropDownLink{
+	font-size:10px;
+}
+#frame-footer #lowerFooter .outerText {
+	display: block;
+}
+#frame-footer #lowerFooter .outerText:hover { 
+	color:					#F3E798;
+}
+#footerMenu .outerText{
+	font-size:10px;
+	padding: 6px;
+}
+#footerLowerText {
+	clear:both;
+	font-size:10px;
+	width:500px;
+	padding:20px 0px 0px 0px;
+	color:#9ebfd5;
+	width:705px;
+	text-align:justify;
+}
+#footerLowerText  a{
+	color:					#FFFFFF;
+	text-decoration:		underline;
+	font-size:10px;
+}
+#footerLowerText a:hover{
+	color:					#F3E798;
+	text-decoration:		underline;
+}
+#lowerFooter{
+	background:#1170af;
+	background-position:top left;
+	height:193px;
+	background-repeat:repeat-x;
+}
+#lowerFooterImage{
+	float:right;
+	border:0;
+}
+
+#lowerFooterImage img {
+	display: block;
+}
+
+
+/*-----------------------------------------
+	POINTY LINKS
+-------------------------------------------*/	
+.pointy_links {
+	list-style: none;
+}
+	.pointy_links li {
+		float: left;
+		display: block;
+		padding: 0px;
+		margin-right: 6px;
+		margin-left: 0;
+	}
+	.pointy_links a {
+		font-size: 11px;
+		line-height: 27px;
+		display: block;
+		text-decoration: none;
+		padding: 0 10px;
+		font-weight: bold;
+		margin-left: -2px;
+	}
+	
+	/*** active state ***/
+	.pointy_links li.active {
+		background: url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_pointy_link_blue_right.gif) no-repeat right top;
+	}
+	.pointy_links li.active a {
+		background: url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_pointy_link_blue_left.gif) no-repeat left top;		
+		color: #fff;
+	}
+	.pointy_links li.active a:hover {
+		text-decoration: none;
+	}
+	.pointy_links li.active a span {
+		background: url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_pointy_link_blue_bottom.gif) no-repeat center bottom;
+		display: block;
+		padding-bottom: 14px;
+	}
+	
+	/*** hover state ***/
+	/*.pointy_links li.hover {
+		background: url(/arrow/webresource/templates/images/pages/rewards/backgrounds/bg_link_round_litebrown_right.gif) no-repeat right top;
+	}
+	.pointy_links li.hover a {
+		background: url(/arrow/webresource/templates/images/pages/rewards/backgrounds/bg_link_round_litebrown_left.gif) no-repeat left top;
+	}
+	.pointy_links li.hover a:hover {
+		text-decoration: none;
+	}
+	.pointy_links li.hover a span {
+		background: url(/arrow/webresource/templates/images/pages/rewards/link_point_down_litebrown.gif) no-repeat center bottom;	
+		display: block;
+		padding-bottom: 5px;	
+	}*/
+	
+	.pointyActive {
+		display: block;
+	}
+	.pointyInactive {
+		display: none;
+	}
+
+
+/*-----------------------------------------
+	ALERT BOX
+-------------------------------------------*/
+.alert_box {
+	width: 885px;
+	font-size: 18px;
+	margin: 20px 0 0 0;
+	padding: 20px 19px;	
+	position: relative;	
+}
+
+.alert_box.yellow {
+	background: url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_rewards_alert_yellow.gif) #faf0c0 repeat-x;
+	color: #8e7f5b;	
+}
+
+.alert_box.red {
+	background: url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_rewards_alert_red.gif) #f9c7bd repeat-x;
+	color: #b43c25;
+}
+
+.alert_box.congrats {
+	background: url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_rewards_alert_congrats.gif) #faf0c0 repeat-x;
+	width: 665px;
+	color: #323232;	
+}
+
+.alert_box.yellow .message {
+	width: 416px;
+}
+
+.alert_box.red .message {
+	width: 800px;
+}
+
+.alert_box img {
+	display: inline;
+}
+	
+.alert_box .icon {
+	display: inline;
+	width: 40px;
+	padding-right: 14px;
+}
+
+.alert_box .message {
+	display: inline;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+.alert_box .message .product_name {
+	color: #323232;
+}
+
+.alert_box .message .name {
+	display: block;
+	color: #8e7f5b;		
+}
+
+.alert_box .alert_inside .back_option {
+	display: inline;
+	font-size: 15px;
+	width: 400px;
+	margin-right: 5px;
+	text-align: left;
+	line-height: 40px !important;
+}
+
+.alert_box .alert_inside .back_option img {
+	vertical-align: middle;
+}	
+
+.alert_box .alert_inside .back_option a {
+	font-size: 15px;
+	color: #323232;
+	text-decoration: underline;
+	font-weight: bold;
+	float:left;
+}
+
+.alert_inside .back_option a:hover {
+	color: #8e7f5b;
+}
+
+
+.alert_box .alert_inside .back_option .or {
+	margin: 0 10px;
+	font-weight: bold;	
+}
+
+/* Vertical Centering Hack */
+.alert_box .vert_center {
+	display: table !important;
+	display: block;			
+	/*margin-bottom: 1em;	*/	
+}
+
+.alert_box .vert_center .alert_inside {
+	display: table-row; /* Gecko */	
+}
+
+.alert_box .alert_inside .icon, .alert_box .alert_inside .message, .alert_box .alert_inside .back_option {
+	display: table-cell !important;
+	display: inline;
+	zoom: 1;
+	vertical-align: middle;
+}
+	
+
+/*-----------------------------------------
+	ROUNDED CORNER POSITIONERS
+-------------------------------------------*/
+.corner_tl {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.corner_tr {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.corner_bl {
+	position: absolute;
+	bottom: 0;	
+	left: 0;
+}
+
+.corner_br {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+
+/*-----------------------------------------
+	MISCELLANEOUS 
+-------------------------------------------*/
+
+.product_count {
+	color: #94a7b4;
+}
+	
+	
+.float_wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+a.arrowed_link img {
+}
+
+a.more_link {
+	color: #002a48;
+	font-weight: bold;
+	font-size: 12px;
+}
+	a.more_link:hover {
+		color: #0071cb;
+		font-size: 12px;
+	}
+	
+a:hover {
+	color: #002a48;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+.pointerActive {
+	display: block;
+}
+.pointerInactive {
+	display: none;
+}
+
+.shadow_divider {
+	background: transparent url(/arrow/webresource/templates/images/pages/rewards/rewards/background/bg_rewards_breadcrumb_shadow.gif) no-repeat scroll center bottom;
+}
+
+
+/*-----------------------------------------
+	POP-LAYER 
+-------------------------------------------*/
+
+#pop_layer {
+    background-color: transparent !important;
+    background-image: url("/arrow/webresource/images/rewards/background/bg_grey_fade.png") !important;
+    background-repeat: repeat;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1499;
+}				
+
+* html #pop_layer {
+	background-color: #000;
+	back\ground-color: transparent;
+	background-image: url(/arrow/webresource/templates/images/pages/rewards/blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="arrow/webresource/images/rewards/background/bg_grey_fade.png", sizingMethod="scale");
+}
+
+.pop_content {
+	position: absolute;
+	z-index: 1500;
+	top: 0px;
+	left: 0px;
+	display:none;
+	padding: 0px;		
+	font-size: 12px;
+}
+
+.pop_content {
+	margin: 200px auto 0 auto;
+	width: 428px;								
+}
+
+.pop_content .message {
+	background: #fff;
+	padding: 5px 20px;
+	font-weight: bold;
+	width: 388px;
+	font-size: 12px;
+    font-style: normal;
+    font-family: "Lucida Grande",Arial,sans-serif;
+    vertical-align: middle;
+}	
+
+.pop_content .message a {
+	font-size: 16px;
+}
+
+.pop_content #pop_info  {
+	font-size: 16px;
+	line-height: 20px;
+	color: #323232;
+	
+}
+
+
+
+/* used for one button - right aligned */			
+.pop_content .button  {				
+	display: block;
+	text-align: right;
+	margin-top: 20px;
+}
+
+/* used for two buttons - centered */
+.pop_content .buttons  {				
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+	.pop_content .buttons a {				
+		padding: 0 5px;
+	}
+
+
+.pop_content .corners_top img {				
+	vertical-align: top;
+}
+/*-----------------------------------------
+	SIGNIN BUBBLE - BLOCK 
+-------------------------------------------*/
+.login-bubble {
+	height: 180px;
+	position:relative;
+}
+
+.login-bubble-main {
+	display:inline;
+	float:right;
+}
+
+.login-bubble-top {
+	width: 295px;
+	height: 45px;
+}
+
+.login-bubble-body {
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #FFFFFF;
+	width: 265px;
+	font-size: 12px;
+}
+
+.login-bubble-bottom {
+	width: 295px;
+}
+
+.login-bubble-bottom  img {
+	vertical-align: top;
+}
+.login-bubble-fin {
+	float: right;
+	padding-top: 25px;	
+}
+
+.login-button {
+	padding-top: 10px;
+}
+
+.travel_category_name {
+    font-size: 11px;
+    font-weight: bold;
+}
+.spinner {
+        position: absolute;        
+        z-index: 999;
+        background: #fff;
+}
+.spinner-img {
+        background: url(/arrow/webresource/templates/images/spinner.gif) no-repeat;
+        width: 24px;
+        height: 24px;
+}
