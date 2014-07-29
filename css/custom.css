@@ -10,7 +10,7 @@
     background-color: white;
 }
 .carousel-indicators .active{
-    background-color: #ee6d4d;
+    background-color: #D64747;
 }
 
 .pad-top {
@@ -25,7 +25,7 @@
     .poll {
         height: 290px;
         border-radius: 5px;
-        background-color: #ee6d4d;
+        background-color: #D64747;
         padding: 10px 20px 20px;
         color: white;
     } 
@@ -38,8 +38,8 @@
 }
 .btn-default {
     background-color: white;
-    color: #ee6d4d;
-    border-color: #ee6d4d;
+    color: #D64747;
+    border-color: #D64747;
 }
 .tab-pane img {
     width: 300px;
@@ -48,8 +48,8 @@
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    border-color: #ffad99;
-    color: #d63333;
+    border-color: #D64747;
+    color: #D64747;
 }
 .nav-tabs > li > a{
     color: #330000;
@@ -58,11 +58,11 @@
     padding: 8px 12px;
 }
 .nav-tabs {
-    border-color: #ffad99;
+    border-color: #D64747;
 }
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
-    border-bottom: #d63333;
+    border-bottom: #D64747;
 }
 
 #am-footer h3 {
@@ -79,4 +79,14 @@
 .logo-footer {
     width: 150px;
     padding-top: 45px;
+}
+.social-wrapper img {
+    padding: 0 0 20px;
+}
+#am-footer .main-bar .item.social-wrapper li {
+    margin-bottom: 0;
+}
+
+.jqbar {
+    top: 0;
 }
