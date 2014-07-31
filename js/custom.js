@@ -90,10 +90,10 @@ $(document).ready(function() {
 		animationSpeed: 500,
 		barColor: '#DA5959',
 		orientation: 'h',
-		barWidth: 20,
+		barWidth: 8,
 		label: 'Label',
 		value: 77,
-		barLength: 700
+		barLength: 200
 	});
 
 	$('.poll button').click(function(e) {

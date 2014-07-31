@@ -96,6 +96,10 @@
     padding: 20px;
     margin: 0 auto;
 }
+.pad-side {
+    padding: 0 20px;
+    margin: 0 auto;
+}
 .border-padding{
     padding: 15px;
     border-radius: 5px;
@@ -129,3 +133,4 @@
 .details-side {
 
 }
+indigogo
