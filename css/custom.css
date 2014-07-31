@@ -10,7 +10,7 @@
     background-color: white;
 }
 .carousel-indicators .active{
-    background-color: #D64747;
+    background-color: #DA5959;
 }
 
 .pad-top {
@@ -25,7 +25,7 @@
     .poll {
         height: 290px;
         border-radius: 5px;
-        background-color: #D64747;
+        background-color: #DA5959;
         padding: 10px 20px 20px;
         color: white;
     } 
@@ -38,8 +38,8 @@
 }
 .btn-default {
     background-color: white;
-    color: #D64747;
-    border-color: #D64747;
+    color: #DA5959;
+    border-color: #ccd9e0;
 }
 .tab-pane img {
     width: 300px;
@@ -48,8 +48,8 @@
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    border-color: #D64747;
-    color: #D64747;
+    border-color: #ccd9e0;
+    color: #DA5959;
 }
 .nav-tabs > li > a{
     color: #330000;
@@ -58,11 +58,11 @@
     padding: 8px 12px;
 }
 .nav-tabs {
-    border-color: #D64747;
+    border-color: #ccd9e0;
 }
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
-    border-bottom: #D64747;
+    border-bottom: #ccd9e0;
 }
 
 #am-footer h3 {
@@ -86,7 +86,46 @@
 #am-footer .main-bar .item.social-wrapper li {
     margin-bottom: 0;
 }
-
+#am-footer .main-bar .item.social-wrapper ul {
+    padding-left: 0;
+}
 .jqbar {
     top: 0;
+}
+.pad {
+    padding: 20px;
+    margin: 0 auto;
+}
+.border-padding{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+}
+.border-padding-large{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+}
+.center-img {
+    margin: 0 auto;
+}
+.tab-content .col-sm-4 h4,
+.tab-content .col-sm-4 p,
+.tab-content .col-sm-4 span {
+    color: #330000;
+}
+.charity-details h3,
+.charity-details h4,
+.charity-details p,
+.charity-details span {
+    color: #330000;
+}
+.charity-details h3 {
+    font-size: 21px;
+    margin: 0;
+}
+
+/*todo*/
+.details-side {
+
 }

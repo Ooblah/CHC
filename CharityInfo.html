@@ -13,6 +13,26 @@
 </head>
 
 <body>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<header class="clearfix">
 		<div class="container">
 			<div class="row">
@@ -161,199 +181,38 @@
 		<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
 		<div id="fb-root"></div>
 
+		
 
-		<div class="row pad-top">
-			<div class="col-md-9 col-sm-12 col-xs-12 pad-right">
 
-				<div class="carousel slide" id="carousel-1" data-ride="carousel">
+		<div class="row pad-top charity-details">
+			<div class="col-sm-12 col-xs-12 pad-right">
 
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-1" data-slide-to="1"></li>
-						<li data-target="#carousel-1" data-slide-to="2"></li>
-					</ol>
+				<div class="col-xs-12">
+					<h3>First Heading</h3>
+				</div>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/placeholder.jpg" alt="...">
+				<div class="col-xs-9 pad">
+					<div class="col-xs-12 border-padding-large">
 
+						<img class="img-responsive" src="img/placeholder.jpg">
+
+						<p>Description of img</p>
+						<p>General description</p>
+						<div id="bar-10">
 						</div>
-						<div class="item">
-							<img src="img/placeholder.jpg" alt="...">
-						</div>
-						<div class="item">
-							<img src="img/placeholder.jpg" alt="...">
+					</div>
+				</div>
+				<div class="col-xs-3 pad">
+					<div class="col-xs-12 details-side">
+						<h4>Want to support <b>Charity X</b>? Donate now!</h4>
+						<div class="col-xs-12 clearfix center-block">
+							<button type="submit" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Donate!</button>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-md-3 col-sm-12 col-xs-12 poll pad-top">
-
-				<h4>What charitable causes would you like to donate to in the future?</h4>
-
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-						Large, well-known international charities.
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						Canadian charites and NGOs.
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-						More local charitable causes.
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-						Personal causes.
-					</label>
-				</div>
-				<div class="radio disabled">
-					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" disabled>
-						Other (disabled)
-					</label>
-				</div>
-				<button type="submit" class="btn btn-default">Vote!</button>
-
-			</div>
-
-		</div>
-		<div class="row">
-			<div calss="col-xs-12">
-				<!-- Nav tabs -->
-				<ul class="nav nav-tabs" role="tablist">
-					<li class="active"><a href="#featured" role="tab" data-toggle="tab">Featured Causes</a></li>
-					<li><a href="#popular" role="tab" data-toggle="tab">Popular Picks</a></li>
-					<li><a href="#new" role="tab" data-toggle="tab">What's New</a></li>
-				</ul>
-
-				<!-- Tab panes -->
-				<div class="tab-content">
-					<div class="tab-pane active" id="featured">
-						<div class="row">
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<a href="CharityInfo.html">
-										<h4>First Heading</h4>
-									</a>
-									<a href="CharityInfo.html">
-										<img class="img-responsive center-img" src="img/placeholder.jpg">
-									</a>
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-1">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<h4>First Heading</h4>
-									<img class="img-responsive center-img" src="img/placeholder.jpg">
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-2">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<h4>First Heading</h4>
-									<img class="img-responsive center-img" src="img/placeholder.jpg">
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-3">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row"><div class="col-xs-12">&nbsp;</div></div>
-					</div>
-					<div class="tab-pane" id="popular">
-						<div class="row">
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<h4>First Heading</h4>
-									<img class="img-responsive center-img" src="img/placeholder.jpg">
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-4">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<h4>First Heading</h4>
-									<img class="img-responsive center-img" src="img/placeholder.jpg">
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-5">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<h4>First Heading</h4>
-									<img class="img-responsive center-img" src="img/placeholder.jpg">
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-6">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row"><div class="col-xs-12">&nbsp;</div></div>
-					</div>
-					<div class="tab-pane" id="new">
-						<div class="row">
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<h4>First Heading</h4>
-									<img class="img-responsive center-img" src="img/placeholder.jpg">
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-7">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<h4>First Heading</h4>
-									<img class="img-responsive center-img" src="img/placeholder.jpg">
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-8">
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4 pad">
-								<div class="col-sm-12 border-padding">
-									<h4>First Heading</h4>
-									<img class="img-responsive center-img" src="img/placeholder.jpg">
-									<p>Description of img</p>
-									<p>General description</p>
-									<div id="bar-9">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
-
 
 	<div id="am-footer" class="full-row clearfix">
 		<div class="main-bar full-row">
