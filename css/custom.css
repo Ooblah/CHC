@@ -7,30 +7,40 @@
 .carousel-indicators li {
     border: none;
     border-radius: 3px;
-    background-color: white;
+    background-color: #99d8f0;
 }
 .carousel-indicators .active{
-    background-color: #DA5959;
+    background-color: orange;
 }
 
 .pad-top {
-    padding: 30px 0 ;
+    padding: 30px 0;
+}
+.pad-top-only {
+    padding: 30px 0 0 0;
+}
+.pad-bot {
+    padding: 0 0 30px 0;
 }
 .carousel {
     height: 290px;
     overflow: hidden;
     border-radius: 5px;
 }
+.poll a{
+    color: orange;
+}
+
 @media (min-width: 992px) {
     .poll {
         height: 290px;
         border-radius: 5px;
-        background-color: #DA5959;
+        background-color: #0f6b99;
         padding: 10px 20px 20px;
         color: white;
     } 
     .poll h4 {
-        color: #330000;
+        color: #65cfe9;
     }
     .pad-right {
         padding: 0 30px 0 0;
@@ -38,8 +48,8 @@
 }
 .btn-default {
     background-color: white;
-    color: #DA5959;
-    border-color: #ccd9e0;
+    color: orange;
+    border-color: orange;
 }
 .tab-pane img {
     width: 300px;
@@ -48,20 +58,23 @@
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    border-color: #ccd9e0;
-    color: #DA5959;
+    color: #004f6d;
 }
 .nav-tabs > li > a{
-    color: #330000;
+    padding: 10px 10px;
 }
 .nav-tabs {
-    border-color: #ccd9e0;
+    border-color: orange;
 }
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
     border-bottom: #ccd9e0;
 }
-
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
+    border-color: orange orange transparent;
+}
 #am-footer h3 {
     margin-top: 0;
 }
@@ -89,6 +102,9 @@
 .jqbar {
     top: 0;
 }
+.jqbar span {
+    color: orange;
+}
 .pad {
     padding: 20px;
     margin: 0 auto;
@@ -102,6 +118,12 @@
     border-radius: 5px;
     background-color: #eeeeee;
 }
+.border-padding-clear{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    height: 608px;
+}
 .border-padding-large{
     padding: 20px;
     border-radius: 5px;
@@ -110,22 +132,26 @@
 .center-img {
     margin: 0 auto;
 }
-.tab-content .col-sm-4 h4,
-.tab-content .col-sm-4 p,
-.tab-content .col-sm-4 span {
-    color: #330000;
-}
-.charity-details h3,
-.charity-details h4,
-.charity-details p,
-.charity-details span {
-    color: #330000;
-}
 .charity-details h3 {
     font-size: 21px;
     margin: 0;
 }
-
+.sm-share span {
+    box-sizing: content-box;
+}
+.full-row {
+    background-color: #cee8f3;
+}
+.comment-btn {
+    margin-top: 5px;
+}
+em.faded {
+    color: orange;
+    font-size: 12px;
+}
+.modal-img {
+    height: 160px;
+}
 /*todo*/
 .details-side {
 
