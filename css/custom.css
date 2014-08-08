@@ -45,6 +45,15 @@
     .pad-right {
         padding: 0 30px 0 0;
     } 
+    .pad-right-sm {
+        padding: 0 15px 0 0;
+    }
+    .pad-left-sm {
+        padding: 0 0 0 20px;
+    }
+    .right-border {
+        border-right: 1px solid #ddd;
+    }
 }
 .btn-default {
     background-color: white;
@@ -151,6 +160,9 @@ em.faded {
 }
 .modal-img {
     height: 160px;
+}
+.text-orange {
+    color: orange;
 }
 /*todo*/
 .details-side {

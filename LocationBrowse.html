@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="css/rewards.css">
+	<link rel="stylesheet" type="text/css" href="css/jqbar.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+	<header class="clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="navbar-brand col-sm-4 col-md-2 hidden-xs">
+					<a href="https://www.airmiles.ca/arrow/Home">
+						<img class="img-responsive" alt="AIR MILES Card" src="img/logo-card-en.png">
+					</a>
+				</div>
+				<div class="header-content logged-out col-sm-8 col-md-10">
+					<div class="header-toolbar col-md-6 hidden-xs">
+						<ul class="tool-bar nav navbar-nav dotted">
+							<li id="header_language_menu_item" class="">
+								<a class="" target="" href="fr_FR">Français</a>
+							</li>
+							<li id="header-enroll-now" class="">
+								<a class="" target="" href="/arrow/EnrollmentAllStep0">Enroll Now</a>
+							</li>
+							<li id="header-cart-icon" class="icon-cart">
+								<a class="glyphicon glyphicon-shopping-cart" target="" href="/arrow/ShoppingCart"></a>
+							</li>
+							<li id="header-link-youraccount" class="dropdown dropdown-hover">
+								<a class="dropdown dropdown-hover" target="" href="/arrow/MyAccount">Your Account</a>
+								<span class="caret"></span>
+
+							</li>
+							<li id="header-dropdown-signin" class="dropdown">
+								<a id="header-link-signin" data-toggle="dropdown" role="button" href="#">Sign In</a>
+
+							</li>
+						</ul>
+					</div>
+					<form id="header-form" class="header-form col-xs-12 col-md-6 pull-left" method="post" target="_self" action="/arrow/login/SignInL2;jsessionid=BC54584B7EC3C6A2D2CCF5F54B736F56?preserveInterception=true&stateId=5&_DARGS=/arrow/base/layout/header/headerLoginFormV3.jsp">
+
+						<label class="label-collector-number" for="header-collector-number-input">
+							How many
+							<span class="non-mobile">AIR MILES reward </span>
+							miles do you have?
+						</label>
+						<div class="row">
+							<div class="pull-left">
+								<div id="header-collector-number" class="clearable-input">
+									<input id="header-collector-number-input" class="form-control" type="text" value="" name="/atg/userprofiling/ProfileFormHandler.collectorNumber" placeholder="Enter your Collector number" maxlength="11">
+
+									<div class="clear-button"></div>
+								</div>
+							</div>
+							<input class="pull-left btn btn-primary" type="submit" value="Go" name="/atg/userprofiling/ProfileFormHandler.login">
+
+						</div>
+						<div class="header-input-additional">
+							<label class="label-rememberme" for="header-rememberme">
+								<input id="header-rememberme" type="checkbox" value="true" name="/atg/userprofiling/ProfileFormHandler.rememberCollector">
+
+								Remember Me
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar navbar-default " role="navigation">
+		<h1 class="visible-xs pull-left"></h1>
+		<div class="navbar-header">
+			<div class="container">
+				<div class="row">
+					<div id="navbar-main" class="col-md-offset-2 col-sm-12 col-md-10 collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li id="navmenu-home" class="menu-home">
+								<a href="/arrow/Home"> Home </a>
+							</li>
+							<li id="navmenu-earnmiles" class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Earn Miles </a>
+
+							</li>
+							<li id="navmenu-redeem" class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Redeem Miles </a>
+
+							</li>
+							<li id="navmenu-chc" class="dropdown active">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> CHC </a>
+
+							</li>
+							<li id="navmenu-needhelp" class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> Need Help? </a>
+
+							</li>
+							<li id="navmenu-more" class="dropdown dropdown-adjust hidden-xs ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> More </a>
+
+							</li>
+
+
+							<li id="navmenu-search" class="hidden-xs">
+								<a id="header-search-button" class="glyphicon glyphicon-search" href="javascript:;">
+									<span class="off"></span>
+									<span class="on"></span>
+								</a>
+								<form action="/arrow/Search" autocomplete="off">
+									<div id="header-search-box" class="clearable-input input-autocomplete">
+										<input id="searchText" class="form-control" type="text" value="Search" placeholder="Search" name="Ntt">
+										<ul id="autocomplete-list" class="autocomplete-list"></ul>
+										<div class="clear-button" href="#"></div>
+									</div>
+									<input type="hidden" value="1" name="Nty">
+								</form>
+							</li>
+						</ul>
+					</div>
+					<a id="link-amshops" class="link-amshops pull-right hidden-xs" target="_blank" href="/arrow/Go?id=1">
+						<span>
+							Shop online and earn at
+							<span id="logo-amshops">
+								<span>airmiles</span>
+								shops.ca
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div id="header-overlay" class=""></div>
+
+	<div class="container">
+
+		<div id="rewardsNavContainer">
+			<h1 class="section-title">Canadians Helping Canadians</h1>
+			<table id="rewardsNavContent" border="0" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td>
+							<a href="CHCIndex.html" target="_top">CHC Home</a>
+						</td>
+						<td>
+							<a href="AllCharities.html" target="_top">Browse All CHarities &amp; NGOs</a>
+
+						</td>
+						<td>
+							<a href="LocationBrowse.html" target="_top">Browse Causes by Location</a>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="row pad-top">
+			<div class="col-md-9 col-sm-12 col-xs-12 pad-right">
+
+				
+				
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="am-footer" class="full-row clearfix">
+		<div class="main-bar full-row">
+			<div class="container grid">
+				<span class="item logo-wrapper">
+					<a href="/arrow/Home">
+						<img class="logo-footer" alt="" src="img/logo-am-footer.png">
+					</a>
+				</span>
+				<span class="item col-sm-3 col-md-2">
+					<h3>Earn Miles</h3>
+					<ul>
+						<li>
+							<a id="upper-footer-earnmiles-in-store" target="" href="/arrow/SponsorDirectory?filter=300001%3AIn+Store__En+magasin">In Store</a>
+						</li>
+						<li>
+							<a id="upper-footer-earnmiles-online" target="" href="/arrow/AirmilesShops">airmilesshops.ca</a>
+						</li>
+						<li>
+							<a id="upper-footer-earnmiles-payment-product" target="" href="/arrow/SponsorDirectory?filter=300001%3APayment+Options__Modes+de+paiement&changeLocale=en_CA">Payment products</a>
+						</li>
+						<li>
+							<a id="upper-footer-earnmiles-promotion" target="" href="/arrow/IssuanceMilesOffers">Offers & Promotions</a>
+						</li>
+						<li>
+							<a id="upper-footer-earnmiles-sponsor-near" target="" href="/arrow/Splash?splashId=5200068&changeLocale=en_CA">Promotional Sponsors</a>
+						</li>
+						<li>
+							<a id="upper-footer-earnmiles-buy-miles" target="" href="/arrow/BuyGiftTransfer">Buy Miles</a>
+						</li>
+						<li>
+							<a id="upper-footer-account-deposit-miles" target="" href="/arrow/BonusCardLogin">Deposit Rewards Miles</a>
+						</li>
+						<li>
+							<a id="" target="" href="/arrow/InspiredLivingSplash?splashId=2600012&changeLocale=en_CA">Inspired Living</a>
+						</li>
+					</ul>
+				</span>
+				<span class="item col-sm-3 col-md-2">
+					<h3>Redeem Miles</h3>
+					<ul>
+						<li>
+							<a id="upper-footer-rewards-cash" target="" href="/arrow/Overview">AIR MILES Cash</a>
+						</li>
+						<li>
+							<a id="upper-footer-rewards-dream" target="" href="/arrow/RewardsHome?selectedCategoryId=cat670016">Dream Rewards</a>
+						</li>
+						<li>
+							<a id="upper-footer-rewards-set-balance" target="" href="/arrow/EarnRatio">Set your balance preference</a>
+						</li>
+						<li>
+							<a id="" target="" href="/arrow/DealsAndMore?selectedCategoryId=cat670038">Deals & More</a>
+						</li>
+						<li>
+							<a id="" target="" href="/arrow/TravelOneFlightHome?selectedCategoryId=cat670036">Travel</a>
+						</li>
+						<li>
+							<a id="" target="" href="/arrow/RewardsGiftGuide?tgi=300031&selectedCategoryId=cat720060">Gift Guide</a>
+						</li>
+					</ul>
+				</span>
+				<span class="item col-sm-3 col-md-2">
+					<h3>Need Help?</h3>
+					<ul>
+						<li>
+							<a id="upper-footer-needhelp-signin" target="" href="/arrow/login/SignIn">Sign In</a>
+						</li>
+						<li>
+							<a id="upper-footer-needhelp-faq" target="" href="/arrow/Help">Browse FAQs</a>
+						</li>
+						<li>
+							<a id="upper-footer-needhelp-faq" target="" href="/arrow/SelfServe">Self-Serve Tools</a>
+						</li>
+						<li>
+							<a id="upper-footer-needhelp-learn-how" target="" href="/arrow/HowItWorks?splashId=17700194">Learn How AIR MILES Works</a>
+						</li>
+						<li>
+							<a id="footer-live-chat-menuitem" target="" href="javascript:;">Live Chat</a>
+						</li>
+						<li>
+							<a id="footer-contact-us" target="" href="/arrow/ContactUs">Contact Us</a>
+						</li>
+					</ul>
+				</span>
+				<span class="item social-wrapper col-sm-4 col-lg-8">
+					<ul>
+						<li class="facebook">
+							<a target="_blank" title="" href="https://www.facebook.com/AirMilesCanada">
+								<img src="img/icn-facebook-large.png">
+								<span class="title">Find us on Facebook</span>
+							</a>
+							<div class="social-interaction-wrapper">
+							</li>
+							<li class="twitter">
+								<a target="_blank" title="" href="https://twitter.com/AIRMILES">
+									<img src="img/icn-twitter-large.png">
+									<span class="title">Follow Us on Twitter</span>
+								</a>
+							</li>
+							<li class="pinterest">
+								<a target="_blank" title="" href="http://pinterest.com/airmilescanada/">
+									<img src="img/icn-pinterest-large.png">
+									<span class="title">View our boards on Pinterest</span>
+								</a>
+							</li>
+							<li class="youtube">
+								<a target="_blank" title="" href="http://www.youtube.com/user/AIRMILESCanada">
+									<img src="img/icn-youtube-large.png">
+									<span class="title">Watch our videos on YouTube</span>
+								</a>
+							</li>
+						</ul>
+					</span>
+				</div>
+			</div>
+
+			<div class="container grid">
+				<ul class="secondary-nav">
+					<li class="item-contact first-child">
+						<a id="footer-contact-us" target="" href="/arrow/ContactUs">Contact Us</a>
+					</li>
+					<li class="item-help non-mobile">
+						<a id="" target="" href="/arrow/Help">Help</a>
+					</li>
+					<li class="item-sitemap non-mobile">
+						<a id="" target="" href="/arrow/SiteMap">Site Map</a>
+					</li>
+					<li class="item-legal non-mobile">
+						<a id="" target="" href="/arrow/TermsAndConditions">Legal</a>
+					</li>
+					<li class="item-privacy">
+						<a id="" target="" href="/arrow/PrivacyPolicy">Privacy</a>
+					</li>
+					<li class="item-aboutus non-mobile">
+						<a id="" target="" href="/arrow/AboutUs">About Us</a>
+					</li>
+					<li class="item-business-opportunities non-mobile">
+						<a id="" target="" href="javascript:popWindowFull('','http://www.loyalty.com/coalition-loyalty/air-miles/')">Business Opportunities</a>
+					</li>
+					<li class="item-careers non-mobile">
+						<a id="" target="" href="javascript:popWindowFull('Careers','http://www.loyalty.com/careers/')">Careers</a>
+					</li>
+				</ul>
+				<p class="fine-print non-mobile">
+					© 1999 - 2014 LoyaltyOne, Co. ®TM Trademarks of AIR MILES International Trading B.V. Used under license by LoyaltyOne, Co. Sponsor, Supplier and Retailer trademarks are owned by the respective Sponsor, Supplier or Retailer or authorized for their use in Canada. To collect AIR MILES® reward miles you must be a Canadian resident. Separate AIR MILES Programs are offered to residents of the
+					<a href="http://www.airmiles.co.uk/" target="_blank">UK</a>
+					, the
+					<a href="http://www.airmiles.nl" target="_blank">Netherlands</a>
+					,
+					<a href="https://www.travelclub.es" target="_blank">Spain</a>
+					and the
+					<a href="http://www.airmilesme.com" target="_blank">U.A.E</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/fbshare.js"></script>
+	<script type="text/javascript" src="js/jqbar.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+
+</body>
