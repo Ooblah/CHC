@@ -270,4 +270,12 @@ $(document).ready(function() {
 			'<h4>Share your donation!</h4>');
 	});
 
+	$('.can-north').hover(
+		function() {
+			$('.can-north').addClass('grayHover');
+		},
+		function() {
+			$('.can-north').removeClass('grayHover');
+		});
+
 });
