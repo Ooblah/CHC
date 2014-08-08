@@ -110,7 +110,7 @@ $(document).ready(function() {
 		$('.poll h4').text('Thank you for voting!');
 		$('.poll .radio').addClass('hidden');
 		$('.poll button').addClass('hidden');
-		$('.poll').append('<p>To redeem your # free AIRMILES click <a href="#">here</a>.</p><p>Not a collector? <a href="#">Sign up</a> now!</p>');
+		$('.poll').append('<p>To redeem your # free AIRMILES click <a href="#">here</a>.</p><p>Not a collector? <a href="#">Enroll Now</a>!</p>');
 	});
 
 	$('#myModal .modal-footer .confirm').on('click', function() {
