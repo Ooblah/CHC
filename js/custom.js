@@ -270,12 +270,32 @@ $(document).ready(function() {
 			'<h4>Share your donation!</h4>');
 	});
 
-	$('.can-north').hover(
-		function() {
-			$('.can-north').addClass('grayHover');
-		},
-		function() {
-			$('.can-north').removeClass('grayHover');
-		});
+	$('.can-north').hover(function() {
+		$('.can-north').find(".overlay").removeClass('hidden');
+	}
+	,function(){
+		$('.can-north').find(".overlay").addClass('hidden');
+	});
+
+	$('.can-east').hover(function() {
+		$('.can-east').find(".overlay").removeClass('hidden');
+	}
+	,function(){
+		$('.can-east').find(".overlay").addClass('hidden');
+	});
+
+	$('.can-west').hover(function() {
+		$('.can-west').find(".overlay").removeClass('hidden');
+	}
+	,function(){
+		$('.can-west').find(".overlay").addClass('hidden');
+	});
+
+	$('.can-centr').hover(function() {
+		$('.can-centr').find(".overlay").removeClass('hidden');
+	}
+	,function(){
+		$('.can-centr').find(".overlay").addClass('hidden');
+	});
 
 });
