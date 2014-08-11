@@ -267,7 +267,8 @@ $(document).ready(function() {
 	$('#myModal .modal-footer .confirm').on('click', function() {
 		$('#myModal .modal-footer').html('<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>');
 		$('#myModal .modal-body').html('<p>Thank you for donating <b>X</b> AIRMILES Dream to <b>Charity X</b>! We are one step closer to reaching our goal!</p>' + 
-			'<h4>Share your donation!</h4>');
+			'<h4>You have earned a badge for donating X AIR MILES!</h4>' + 
+			'<p><img class="badge-img-lg img-responsive" src="img/ribbonBadge.png"></p>');
 	});
 
 	$('.can-north').hover(function() {
@@ -296,6 +297,13 @@ $(document).ready(function() {
 	}
 	,function(){
 		$('.can-centr').find(".overlay").addClass('hidden');
+	});
+
+	$('input[type="radio"]').click(function(){
+		if($(this).attr("value")=="custom"){
+			$('.toggle_radio').css('background', 'rgba(0,0,0,.2)');
+			$('.toggle_radio label').css('color', '#666');
+		}
 	});
 
 });
