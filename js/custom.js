@@ -261,12 +261,12 @@ $(document).ready(function() {
 		$('.poll h4').text('Thank you for voting!');
 		$('.poll .radio').addClass('hidden');
 		$('.poll button').addClass('hidden');
-		$('.poll').append('<p>To redeem your # free AIRMILES click <a href="#">here</a>.</p><p>Not a collector? <a href="#">Enroll Now</a>!</p>');
+		$('.poll').append('<p>To redeem your # free AIR MILES click <a href="#">here</a>.</p><p>Not a collector? <a href="#">Enroll Now</a>!</p>');
 	});
 
 	$('#myModal .modal-footer .confirm').on('click', function() {
 		$('#myModal .modal-footer').html('<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>');
-		$('#myModal .modal-body').html('<p>Thank you for donating <b>X</b> AIRMILES Dream to <b>Charity X</b>! We are one step closer to reaching our goal!</p>' + 
+		$('#myModal .modal-body').html('<p>Thank you for donating <b>X</b> AIR MILES Dream to <b>Charity X</b>! We are one step closer to reaching our goal!</p>' + 
 			'<h4>You have earned a badge for donating X AIR MILES!</h4>' + 
 			'<p><img class="badge-img-lg img-responsive" src="img/ribbonBadge.png"></p>');
 	});
