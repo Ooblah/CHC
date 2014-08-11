@@ -154,6 +154,36 @@ $(document).ready(function() {
 		barLength: 170
 	});
 
+	$('#bar-26').jqbar({
+		animationSpeed: 500,
+		barColor: '#0f6b99',
+		orientation: 'h',
+		barWidth: 8,
+		label: 'Label',
+		value: 85,
+		barLength: 170
+	});
+
+	$('#bar-27').jqbar({
+		animationSpeed: 500,
+		barColor: '#0f6b99',
+		orientation: 'h',
+		barWidth: 8,
+		label: 'Label',
+		value: 56,
+		barLength: 170
+	});
+
+	$('#bar-28').jqbar({
+		animationSpeed: 500,
+		barColor: '#0f6b99',
+		orientation: 'h',
+		barWidth: 8,
+		label: 'Label',
+		value: 25,
+		barLength: 170
+	});
+
 	//large bars
 	$('#bar-10').jqbar({
 		animationSpeed: 500,
